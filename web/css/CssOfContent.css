@@ -1,0 +1,16 @@
+.next-page{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.next-page>a{
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    background-color: #33ee8c;
+}
+
+.next-page>a:hover{
+    color: black;
+}

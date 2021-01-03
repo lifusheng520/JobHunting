@@ -150,6 +150,8 @@
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                         <input formaction="${pageContext.request.contextPath}/AddCompanyServlet?method=delete&job_id=${job.job_id}&company_id=${job.company_id}"
                                type="submit" value="     删除     ">
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input type="submit" formaction="${pageContext.request.contextPath}/Applicant/addCompany.jsp" value="  添加招聘  ">
                     </td>
                 </tr>
             </table>

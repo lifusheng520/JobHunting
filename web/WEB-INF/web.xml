@@ -4,6 +4,30 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <!--        拦截所有用户页面 已经jsp -->
+        <url-pattern>/Applicant/*</url-pattern><!--过滤器作用对象-->
+        <url-pattern>*.jsp</url-pattern>
+        <!--        拦截所有Servlet，防止未登录的数据注入-->
+        <url-pattern>/AddCompanyServlet</url-pattern>
+        <url-pattern>/AddResumeServlet</url-pattern>
+        <url-pattern>/CollectionServlet</url-pattern>
+        <url-pattern>/ExitServlet</url-pattern>
+        <url-pattern>/JobApplyServlet</url-pattern>
+        <url-pattern>/JobServlet</url-pattern>
+        <!--        只开放登录和注册Servlet-->
+        <!--        <url-pattern>/RegisterServlet</url-pattern>-->
+        <!--        <url-pattern>/LoginServlet</url-pattern>-->
+        <url-pattern>/PersonalServlet</url-pattern>
+        <url-pattern>/RecruitApplyServlet</url-pattern>
+        <url-pattern>/SearchApplyServlet</url-pattern>
+        <url-pattern>/uploadResumePicServlet</url-pattern>
 
+    </filter-mapping>
 
 </web-app>
